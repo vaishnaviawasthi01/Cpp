@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -15,16 +16,15 @@ cin >> str;
 
 // Pointer variable refers to address of string 
 p=str;
-count=0;
+int count=0;
 // Show string by shifting top character of string to right
 while(*p!='\0')
 {
 	count++;
 	p++;
 }
-for(int i=0;i<count;i++)
-{
-	
+for(int i=count-1;i>=0;i--)
+cout<<str+i<<endl;
 
 return (0);
 }
